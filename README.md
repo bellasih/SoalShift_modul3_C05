@@ -182,3 +182,15 @@ Exit
 7. Pastikan terminal hanya mendisplay status detik ini sesuai scene terkait (hint: menggunakan system(“clear”))
 
 
+## Penjelasan
+Langkah-langkah :
+1. Game<br>
+   Belum selesai
+2. Shop<br>
+   a. Buat fungsi *shop_scene_m* untuk menampilkan jumlah stok yang masih ada. Selain itu, terdapat menu untuk memilih apakah user ingin membeli atau kembali (keluar)
+   b. Buat fungsi *restock* untuk menambah jumlah stock yang ada
+   c. Di main, buat thread untuk menjalankan *shop_scene_m*
+   d. Apabila input berupa 1, maka akan dibuat thread untuk menjalankan *restock*. Apabila input berupa 2, maka program akan berhenti.
+   Catatan : <br>
+   Karena program dapat berjalan tanpa menggunakan key press (tombol enter) maka harus dibuat pengaturan yang dapat mendeteksi bahwa ketika karakter telah dipilih, maka program akan mengeksekusi perintah selanjutnya. Dalam hal ini, digunakan tcgetattr untuk menyimpan telebih dahulu aturan yang lama. Lalu tcsetattr untuk membuat aturan yang baru.
+
