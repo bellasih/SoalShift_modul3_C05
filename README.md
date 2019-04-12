@@ -288,7 +288,7 @@ Langkah-langkah :
 	    if(opsi == '1'){
 		    health -= 20;
 		    zblood -= 20;
-    	    if(zblood == 0){
+    	    if(zblood <= 0){
 		        printf("\nGame telah selesai!\n");
 			    printf("Skor Akhir: \n");
 			    printf("%s hunger status: %d | hygiene status: %d\n", xplayer, hunger, hygiene);
